@@ -1,0 +1,470 @@
+body {
+  height: 100vh;
+  padding: 0;
+  margin: 0;
+  font-family: sans-serif;
+}
+
+.cards {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 40px;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-around;
+}
+
+#contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 2rem;
+  padding: 2rem 0;
+}
+
+.contact_info {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  column-gap: 30px;
+}
+
+.contact-details-container {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid rgba(60, 64, 67, 0.25);
+  align-items: center;
+  width: 45rem;
+  padding: 5px;
+}
+
+@media screen and (max-width: 480px) {
+  .popular {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    column-gap: 15px;
+    margin-bottom: 20px;
+  }
+
+  .header-bar {
+    background-color: orange;
+    height: 8rem;
+    width: 2px;
+    display: none;
+  }
+
+  .pills {
+    display: flex;
+    flex-direction: column;
+    column-gap: 10px;
+  }
+  .heading {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .cards {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 30px;
+  }
+  #contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 2rem;
+    padding: 2rem 0;
+  }
+  .contact_info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    row-gap: 30px;
+  }
+  .contact-details-container {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid rgba(60, 64, 67, 0.25);
+    align-items: center;
+    width: 20rem;
+    padding: 5px;
+  }
+  .footer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .footer-container div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-container div div p{
+    margin: 5px 2px !important;
+  }
+
+  .social-icons{
+    display: flex;
+    flex-direction: row !important;
+    padding-bottom: 10px;
+  }
+}
+
+@media screen and (min-width: 480px) and (max-width: 768px) {
+  .navbar {
+    display: flex;
+    flex-direction: column;
+    background-color: #000033;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 1rem;
+  }
+
+  .heading {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+  }
+  .header-bar {
+    background-color: orange;
+    height: 8rem;
+    width: 2px;
+    display: none;
+  }
+  #contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 2rem;
+    padding: 2rem 0;
+  }
+  .contact_info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    row-gap: 30px;
+  }
+  .contact-details-container {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid rgba(60, 64, 67, 0.25);
+    align-items: center;
+    width: 35rem;
+    padding: 5px;
+  }
+  .footer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .footer-container div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-container div div p{
+    margin: 5px 2px !important;
+  }
+
+  .social-icons{
+    display: flex;
+    flex-direction: row !important;
+    padding-bottom: 10px;
+  }
+
+}
+
+/* Navbar */
+
+.navbar {
+  display: flex;
+  background-color: #000033;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 1rem;
+}
+
+.menu a {
+  color: white;
+  text-decoration: none;
+}
+
+/* Hero section */
+
+.hero {
+  background-image: url("https://github.com/Mohak-Trivedi/xCruise/blob/main/assests/hero-cruise.png?raw=true");
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-text-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+}
+
+.hero-text-container h1 {
+  margin: 0;
+}
+
+.hero-text-container button {
+  padding: 0.6rem 1.3rem;
+  background-color: orangered;
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+
+.discover {
+  padding: 1rem 1rem;
+}
+
+.header-container {
+  display: flex;
+  column-gap: 10px;
+  align-items: center;
+}
+
+.heading {
+  display: flex;
+  flex-direction: column;
+}
+
+.heading h2 {
+  margin-bottom: 5px;
+}
+
+.header-bar {
+  background-color: orange;
+  height: 8rem;
+  width: 2px;
+}
+
+.popular {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.pills {
+  display: flex;
+  gap: 10px;
+}
+
+.pill {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  column-gap: 8px;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+  padding: 0 1rem;
+  border-radius: 50%;
+}
+
+.pill p,
+h5 {
+  padding: 0;
+  margin: 10px 0;
+}
+
+.pill img {
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+}
+
+#caribbean-bahamas {
+  background-image: url("https://github.com/Mohak-Trivedi/xCruise/blob/main/assests/caribbean-cruise.png?raw=true");
+  height: 20rem;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-bottom: 40px;
+  padding: 0;
+}
+
+#mediterranean {
+  background-image: url("https://github.com/Mohak-Trivedi/xCruise/blob/main/assests/mediterranean-cruise.png?raw=true");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 18rem;
+  width: 18rem;
+}
+
+#dubai {
+  background-image: url("https://github.com/Mohak-Trivedi/xCruise/blob/main/assests/dubai-cruise.png?raw=true");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 18rem;
+  width: 18rem;
+}
+
+#north-euro {
+  background-image: url("https://github.com/Mohak-Trivedi/xCruise/blob/main/assests/northern-europe-cruise.png?raw=true");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 18rem;
+  width: 18rem;
+}
+
+#red-sea {
+  background-image: url("https://github.com/Mohak-Trivedi/xCruise/blob/main/assests/redsea-cruise.png?raw=true");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 18rem;
+  width: 18rem;
+}
+
+#bermuda {
+  background-image: url("https://github.com/Mohak-Trivedi/xCruise/blob/main/assests/bermuda-beach-cruise.png?raw=true");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 18rem;
+  width: 18rem;
+}
+
+#south-africa {
+  background-image: url("https://github.com/Mohak-Trivedi/xCruise/blob/main/assests/bermuda-beach-cruise.png?raw=true");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 18rem;
+  width: 18rem;
+}
+
+#south-america {
+  background-image: url("https://github.com/Mohak-Trivedi/xCruise/blob/main/assests/south-america-cruise.png?raw=true");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 18rem;
+  width: 18rem;
+}
+
+#asia {
+  background-image: url("https://github.com/Mohak-Trivedi/xCruise/blob/main/assests/asia-cruise.png?raw=true");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 18rem;
+  width: 18rem;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 0 20px;
+  cursor: pointer;
+}
+
+.card h2 {
+  font-size: 1rem;
+}
+
+.card h2,
+.card p {
+  padding: 0;
+  margin: 5px;
+  color: white;
+}
+
+/* Footer */
+
+.contact-us {
+  display: flex;
+  flex-direction: column;
+}
+.contact-us h3 {
+  margin: 7px;
+}
+.contact-bar {
+  background-color: orange;
+  height: 0.2rem;
+  width: 120px;
+  margin-top: -35px;
+}
+
+.contact-details-container h4,
+.contact-details-container p {
+  margin-bottom: 5px;
+}
+
+.contact-details-container p {
+  margin-bottom: 10px;
+}
+
+
+/* Footer */
+
+#footer {
+  margin-top: 4em;
+  background-color: #000033;
+  color: white;
+}
+
+.footer-container div h4 {
+  color: rgb(231, 152, 43);
+}
+
+.footer-container div div p {
+ margin: 10px 2px;
+}
+
+.social-icons img{
+  height: 25px;
+  width: 25px;
+  margin: 0 4px;
+}
+
+.social-icons img:first-child{
+  margin-left: 0; 
+}
+
+.footer_rights {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.line {
+  width: 100%;
+  height: 2px;
+  background-color: #21215c;
+}
+
+.footer-rights p {
+  margin-top: 5px;
+}
